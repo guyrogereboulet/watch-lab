@@ -1,0 +1,48 @@
+header {
+
+    background-color: $navColor;
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: $headerHeight;
+
+        ul {
+            list-style: none;
+
+            // &:after {
+            //     content: "";
+            //     clear: both;
+            //     display: table;
+            // }
+            li {
+                display: inline-block;
+                height: 100%;
+                border: 1px solid black;
+
+
+            }
+
+        }
+
+    }
+
+
+    .jumbo {
+        background-color: whitesmoke;
+        .selection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .discover {
+                height: 20px;
+                width: 50px;
+            }
+        }
+    }
+}

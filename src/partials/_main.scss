@@ -1,0 +1,89 @@
+main {
+    background-color: $mainColor;
+    // height: $mainHeight;
+
+    #history {
+        .history-title {
+            padding: 50px;
+        }
+
+        .history-top{
+            border: 1px solid black;
+            &:after {
+                content:"";
+                display:table;
+                clear:both;
+            }
+
+            .history-top-left {
+                @include floatLeft;
+                padding: 50px;
+            }
+            .history-top-right {
+                @include floatLeft;
+                padding: 50px;
+            }
+            
+
+        }
+
+        .history-middle {
+            border: 1px solid black;
+             &:after {
+                 content: "";
+                 display: table;
+                 clear: both;
+             }
+            .history-middle-left{
+                @include floatLeft;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+
+            }
+            .history-middle-right {
+                @include floatLeft;
+                background-color: coral;
+                height: 600px;
+                //  img {
+                //      
+                //  }
+            }
+        }
+
+        .history-bottom {
+            border: 1px solid black;
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            
+
+            .history-bottom-left {
+                @include floatLeft;
+                background-color: coral;
+                height: 600px;
+                // img {
+                //     height: 100%;
+                // }
+            }
+
+            .history-bottom-right {
+                @include floatLeft;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+
+            }
+        }
+
+    }
+
+}
