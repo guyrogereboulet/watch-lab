@@ -1,5 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  color: blue;
+  color: black;
   font-size: 20px;
+}
+
+.container header {
+  background-color: grey;
+}
+
+.container header nav {
+  height: 100px;
+}
+
+.container header nav ul {
+  list-style: none;
+}
+
+.container header nav ul li {
+  display: inline-block;
+}
+
+.container main {
+  background-color: yellow;
+  height: calc(100vh - 300px);
+}
+
+.container footer {
+  background-color: green;
+  height: 200px;
 }
 
