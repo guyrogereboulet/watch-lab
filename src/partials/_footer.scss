@@ -1,7 +1,86 @@
 footer {
     border: 1px solid black;
     background-color: $footerColor;
-    height: $footerHeight;
+    // height: $footerHeight;
+    .footer-container {
+        width: 100%;
+
+        .container-list {
+            
+            display: flex;
+            flex-direction: row;
+
+            &-left {
+                border: 1px solid black;
+                width: 25%;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        display: block;
+                    }
+
+                }
+
+            }
+
+            &-center {
+                border: 1px solid black;
+                width: 25%;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        display: block;
+                    }
+
+                }
+
+            }
+
+            &-right {
+                border: 1px solid black;
+                width: 25%;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        display: block;
+                    }
+
+                }
+
+            }
+
+            &-contact {
+                border: 1px solid black;
+                width: 25%;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        display: block;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .container-copy {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
 
 
+    }
+
+    
 }

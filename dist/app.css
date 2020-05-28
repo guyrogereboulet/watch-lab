@@ -162,6 +162,8 @@ main #press .press-container .press-right {
 
 main #discover {
   width: 100%;
+  display: flex;
+  margin-bottom: 50px;
 }
 
 main #discover .discover-left {
@@ -172,9 +174,126 @@ main #discover .discover-left {
   align-items: center;
 }
 
+main #discover .discover-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+main #discover .discover-right-top {
+  display: flex;
+}
+
+main #discover .discover-right-top-left {
+  width: 50%;
+  background-color: coral;
+  height: 300px;
+}
+
+main #discover .discover-right-top-right {
+  width: 50%;
+  background-color: lightblue;
+  height: 300px;
+}
+
+main #discover .discover-right-bottom {
+  display: flex;
+}
+
+main #discover .discover-right-bottom-left {
+  width: 50%;
+  background-color: purple;
+  height: 300px;
+}
+
+main #discover .discover-right-bottom-right {
+  width: 50%;
+  background-color: grey;
+  height: 300px;
+}
+
+main #get {
+  background-color: #BCAC9D;
+}
+
+main #get .get-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 footer {
   border: 1px solid black;
   background-color: green;
-  height: 200px;
+}
+
+footer .footer-container {
+  width: 100%;
+}
+
+footer .footer-container .container-list {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .footer-container .container-list-left {
+  border: 1px solid black;
+  width: 25%;
+}
+
+footer .footer-container .container-list-left ul {
+  list-style: none;
+}
+
+footer .footer-container .container-list-left ul li {
+  display: block;
+}
+
+footer .footer-container .container-list-center {
+  border: 1px solid black;
+  width: 25%;
+}
+
+footer .footer-container .container-list-center ul {
+  list-style: none;
+}
+
+footer .footer-container .container-list-center ul li {
+  display: block;
+}
+
+footer .footer-container .container-list-right {
+  border: 1px solid black;
+  width: 25%;
+}
+
+footer .footer-container .container-list-right ul {
+  list-style: none;
+}
+
+footer .footer-container .container-list-right ul li {
+  display: block;
+}
+
+footer .footer-container .container-list-contact {
+  border: 1px solid black;
+  width: 25%;
+}
+
+footer .footer-container .container-list-contact ul {
+  list-style: none;
+}
+
+footer .footer-container .container-list-contact ul li {
+  display: block;
+}
+
+footer .footer-container .container-copy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
