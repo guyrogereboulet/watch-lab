@@ -108,6 +108,7 @@ main #history .history-middle .history-middle-right {
 
 main #history .history-bottom {
   border: 1px solid black;
+  margin-bottom: 50px;
 }
 
 main #history .history-bottom:after {
@@ -131,6 +132,44 @@ main #history .history-bottom .history-bottom-right {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+
+main #press {
+  background: white;
+  background: linear-gradient(90deg, white 50%, gainsboro 50%);
+}
+
+main #press .press-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+main #press .press-container .press-left {
+  width: 30%;
+}
+
+main #press .press-container .press-center {
+  width: 50%;
+}
+
+main #press .press-container .press-right {
+  width: 20%;
+}
+
+main #discover {
+  width: 100%;
+}
+
+main #discover .discover-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
