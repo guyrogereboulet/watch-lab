@@ -2,3 +2,18 @@
     float: left;
     width: 50%;
 }
+
+@mixin footerList {
+    border: 1px solid black;
+    width: 25%;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: block;
+        }
+
+    }
+
+}

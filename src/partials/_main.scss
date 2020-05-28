@@ -172,7 +172,7 @@ main {
     }
 
     #get {
-        background-color:#BCAC9D;
+        background-color: $logoBackground;
         .get-container {
             display: flex;
             flex-direction: column;

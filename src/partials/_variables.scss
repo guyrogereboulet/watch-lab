@@ -1,10 +1,14 @@
 $colorFont: black;
-$navColor: grey;
+$navColor: white;
+$logoColor:white;
+$logoFontSize: 30px;
+$logoBackground: #BCAC9D;
 $mainColor:yellow;
 $footerColor: green;
 $headerHeight: 100px;
 $footerHeight: 200px;
 $mainHeight: calc(100vh - #{$headerHeight + $footerHeight});
 $regularFontsize: 20px;
+$menuFontsize: 15px;
 $firstFont:'Montserrat', sans-serif;
 $secondFont:'Merriweather', serif;

@@ -7,32 +7,98 @@ header {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         height: $headerHeight;
 
-        ul {
-            list-style: none;
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $logoFontSize;
+            background-color: $logoBackground;
+            height: 100%;
+            a {
+                text-decoration: none;
+                font-family: $firstFont;
+                color: $logoColor;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-left: 10px;
+                margin-right: 10px;
+                
+            }
+            
+        }
 
-            // &:after {
-            //     content: "";
-            //     clear: both;
-            //     display: table;
-            // }
-            li {
-                display: inline-block;
-                height: 100%;
-                border: 1px solid black;
+        .menu {
+            flex-grow:2;
+            
 
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    height: 100%;
+                    margin-left: 8%;
+                    color: $colorFont;
+                    cursor: pointer;
+
+                    a {
+                        text-decoration: none;
+                        padding: 1em 1.5em;
+                        font-size: $menuFontsize;
+                        font-family: $firstFont;
+                        font-weight: bold;
+                        color: $colorFont;
+
+
+                        &:hover {
+                            color: $logoBackground;
+                        }
+
+
+                    }
+                }
+
+                
+
+                
 
             }
 
         }
+
+        .search-bar {
+            // display: flex;
+            // flex-direction: center;
+            // align-items: center;
+            padding-right: 100px;
+            padding-bottom: 15px;
+
+            input[type=text] {
+                width: 100%;
+                padding: 10px 10px;
+                margin: 8px 0;
+                border: none;
+                border-bottom: 2px solid black;
+            }
+        }
+
+
+
+        
 
     }
 
 
     .jumbo {
         background-color: whitesmoke;
+        background: url("https://images.unsplash.com/photo-1549399905-5d1bad747576?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1961&q=80");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         .selection {
             display: flex;
             flex-direction: column;

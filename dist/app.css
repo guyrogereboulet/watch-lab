@@ -12,29 +12,85 @@ body {
 }
 
 header {
-  background-color: grey;
+  background-color: white;
 }
 
 header nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100px;
 }
 
-header nav ul {
+header nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: #BCAC9D;
+  height: 100%;
+}
+
+header nav .logo a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header nav .menu {
+  flex-grow: 2;
+}
+
+header nav .menu ul {
   list-style: none;
 }
 
-header nav ul li {
+header nav .menu ul li {
   display: inline-block;
   height: 100%;
-  border: 1px solid black;
+  margin-left: 8%;
+  color: black;
+  cursor: pointer;
+}
+
+header nav .menu ul li a {
+  text-decoration: none;
+  padding: 1em 1.5em;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+header nav .menu ul li a:hover {
+  color: #BCAC9D;
+}
+
+header nav .search-bar {
+  padding-right: 100px;
+  padding-bottom: 15px;
+}
+
+header nav .search-bar input[type=text] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid black;
 }
 
 header .jumbo {
   background-color: whitesmoke;
+  background: url("https://images.unsplash.com/photo-1549399905-5d1bad747576?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1961&q=80");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header .jumbo .selection {

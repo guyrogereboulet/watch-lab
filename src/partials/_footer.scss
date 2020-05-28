@@ -11,62 +11,22 @@ footer {
             flex-direction: row;
 
             &-left {
-                border: 1px solid black;
-                width: 25%;
-
-                ul {
-                    list-style: none;
-
-                    li {
-                        display: block;
-                    }
-
-                }
-
+                @include footerList;
+                
             }
 
             &-center {
-                border: 1px solid black;
-                width: 25%;
-
-                ul {
-                    list-style: none;
-
-                    li {
-                        display: block;
-                    }
-
-                }
+                @include footerList;
 
             }
 
             &-right {
-                border: 1px solid black;
-                width: 25%;
-
-                ul {
-                    list-style: none;
-
-                    li {
-                        display: block;
-                    }
-
-                }
+                @include footerList;
 
             }
 
             &-contact {
-                border: 1px solid black;
-                width: 25%;
-
-                ul {
-                    list-style: none;
-
-                    li {
-                        display: block;
-                    }
-
-                }
+                @include footerList;
 
             }
 
