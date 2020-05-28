@@ -94,20 +94,49 @@ header {
 
     .jumbo {
         background-color: whitesmoke;
-        background: url("https://images.unsplash.com/photo-1549399905-5d1bad747576?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1961&q=80");
-        height: 500px;
+        background: url("https://images.unsplash.com/photo-1484935494280-c21fdf67d5cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+        height: 600px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        font-family: $thirdFont;
         .selection {
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
+            color:white;
+
+            .little-title{
+                padding-top: 100px;
+                margin-bottom: 50px;
+            }
+
+            .title {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .final-title {
+                margin-bottom: 50px;
+            }
 
             .discover {
-                height: 20px;
-                width: 50px;
+
+                padding-bottom: 100px;
+                a {
+                    padding: 10px;
+                    border: 2px solid $logoBackground;
+                    text-decoration: none;
+                    color: $logoBackground;
+
+                    &:hover {
+                        background-color: $logoBackground;
+                        color:white;
+                    }
+                }
+
             }
         }
     }
