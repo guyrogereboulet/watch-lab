@@ -1,6 +1,6 @@
 main {
     background-color: $mainColor;
-    // height: $mainHeight;
+    font-family: $secondFont;
 
     #history {
         p {
@@ -77,8 +77,8 @@ main {
     #press {
         height: 100%;
         background: rgb(255, 255, 255);
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(220, 220, 220, 1) 50%);
-
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(245, 245, 245, 1) 50%);
+        
         .history-title {
             padding: 50px;
             font-size: 40px;
@@ -99,19 +99,41 @@ main {
                 color: $textColorFont;
             }
             .press-center {
-                width: 50%;
-                // background-image: url("https://images.unsplash.com/photo-1505409859467-3a796fd5798e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-                // height: 100px;
-                // background-position: center;
-                // background-repeat: no-repeat;
-                // background-size: cover;
                 img {
                     height: 500px;
                 }
             }
             .press-right {
+                height: 500px;
                 width: 20%;
-                padding: 50px;
+                .top {
+                    padding-bottom: 50px;
+                    font-family: $firstFont;
+                    font-size: 15px;
+                    font-weight: 700;
+                    .colored{
+                        color: $textColorFont;
+                    }
+                }
+
+                .middle {
+                    padding-bottom: 50px;
+                    font-size: 30px;
+                }
+
+                .bottom {
+                    img {
+                        height: 10px;
+                        &:hover{
+                            color: $textColorFont;
+                        }
+
+                    }
+                }
+
+
+                
+                
             }
 
             
@@ -127,11 +149,28 @@ main {
         margin-bottom: 50px;
 
         .discover-left {
+            @include image;
+            color: white;
+            background-image: url("https://images.unsplash.com/photo-1504791635568-fa4993808e0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80");
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            .top{
+                padding-bottom: 50px;
+                font-family: $firstFont;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .bottom {
+                text-align: center;
+                font-family: $secondFont;
+                padding-bottom: 10px;
+                font-size: 30px;
+            }
+            
 
         }
 
@@ -139,35 +178,42 @@ main {
             width: 50%;
             display: flex;
             flex-direction: column;
-            border: 1px solid black;
             &-top {
                 display: flex;
                 &-left {
-                    width: 50%;
-                    background-color: coral;
+                    @include image;
                     height: 300px;
+                    color: white;
+                    background-image: url("https://images.unsplash.com/photo-1582438005052-03a3d902afa2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2008&q=80");
+                    width: 50%;
+                    
                 }
 
                 &-right {
-                    width: 50%;
-                    background-color: lightblue;
-                    height: 300px;
-
+                   @include image;
+                   height: 300px;
+                   color: white;
+                   background-image: url("https://images.unsplash.com/photo-1566039248389-6e184daa50c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
+                   width: 50%;
                 }
 
             }
             &-bottom {
                 display: flex;
                 &-left {
-                  width: 50%;
-                  background-color:purple;
+                  @include image;
                   height: 300px;
+                  color: white;
+                  background-image: url("https://images.unsplash.com/photo-1563613930909-50da605fbc08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
+                  width: 50%;
 
                 }
                 &-right {
-                    width: 50%;
-                    background-color: grey;
+                    @include image;
                     height: 300px;
+                    color: white;
+                    background-image: url("https://images.unsplash.com/photo-1590598016308-7a5a32e88b95?ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80");
+                    width: 50%;
                 }
             }
 
@@ -176,12 +222,70 @@ main {
     }
 
     #get {
+        @include image;
+        height: 300px;
+        color: white;
+        background-image: url("https://images.unsplash.com/photo-1534456297029-c3418e251525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
         background-color: $logoBackground;
+        opacity: 0.7;
         .get-container {
             display: flex;
+            height: 100%;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            font-family: $secondFont;
+            
+
+            .title {
+                margin: 50px;
+                
+            }
+
+            .top {
+                margin-bottom: 20px;
+                text-align: center;
+
+            }
+
+            .get-form{
+                margin-bottom:20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input {
+                    width:300px;
+                    margin-right: 20px;
+                    padding: 20px;
+                    &[type=text] {
+                        border: 2px solid white;
+                        background: transparent;
+                        color: white;
+
+                        
+                        &::placeholder {
+                          color: white;
+
+                        }
+                    }
+                    &:active {
+                        border: 2px solid white;
+                    }
+                }
+
+                a {
+                    padding: 14px;
+                    border: 2px solid white;
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        background-color: $logoBackground;
+                        color: white;
+                    }
+                }
+            }
 
         }
     }

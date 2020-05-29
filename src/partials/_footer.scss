@@ -1,45 +1,94 @@
 footer {
-    border: 1px solid black;
     background-color: $footerColor;
-    // height: $footerHeight;
-    .footer-container {
+    font-family: $secondFont;
+    
+    .footer-container-top {
         width: 100%;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 20%;
+
+        .logo-footer {
+            font-family: $firstFont;
+            color: $logoColor;
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+        
 
         .container-list {
-            
             display: flex;
             flex-direction: row;
+            margin-top: 5%;
+            margin-bottom: 15%;
 
             &-left {
                 @include footerList;
-                
+                @include footerListStyle;
+
             }
 
             &-center {
                 @include footerList;
+                @include footerListStyle;
 
             }
 
             &-right {
                 @include footerList;
+                @include footerListStyle;
 
             }
 
             &-contact {
                 @include footerList;
+                @include footerListStyle;
+                
+                .underline {
+                    text-decoration: underline;
+                }
+                span {
+                    color: $textColorFont;
+                    font-size: 15px;
+                }
+                .firstFont {
 
+                    font-family: $firstFont;
+                    font-weight: bold;
+
+                }
             }
 
         }
 
-        .container-copy {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-        }
+    
+    }
 
+    .footer-container-bottom {
+         .container-copy {
+             width: 100%;
+             padding-top: 2%;
+             padding-bottom: 2%;
+             padding-left: 10%;
+             padding-right: 20%;
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             align-items: center;
+             color: $textColorFont;
+             font-size: 15px;
+             background-color: #18130f;
 
+             .copyright {
+                 margin-right: 10%;
+                 width: 50%;
+             }
+
+             .nss-factory {
+                 padding-left: 34%;
+                 width: 50%;
+             }
+         }
     }
 
     

@@ -4,7 +4,6 @@
 }
 
 @mixin footerList {
-    border: 1px solid black;
     width: 25%;
 
     ul {
@@ -15,6 +14,25 @@
         }
 
     }
+
+}
+
+@mixin footerListStyle {
+      ul {
+          li {
+              padding: 10px;
+
+              a {
+                  text-decoration: none;
+                  color: $textColorFont;
+                  font-size: 15px;
+
+                  &:hover {
+                      color: white;
+                  }
+              }
+          }
+      }
 
 }
 

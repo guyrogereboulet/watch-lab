@@ -94,7 +94,8 @@ header {
 
     .jumbo {
         @include image;
-        background: url("https://images.unsplash.com/photo-1484935494280-c21fdf67d5cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+        height:600px;
+        background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
         font-family: $thirdFont;
         .selection {
             height: 100%;
